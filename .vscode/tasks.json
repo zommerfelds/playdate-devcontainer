@@ -1,0 +1,26 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "make",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Generate level code",
+            "type": "shell",
+            "command": "python3 levels/codegen.py",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+            }
+        }
+    ]
+}

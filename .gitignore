@@ -1,0 +1,5 @@
+/build
+/build-cmake
+*.pdx
+/Source/pd*
+*.tiled-session
