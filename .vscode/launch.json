@@ -11,7 +11,7 @@
             "envFile": "${workspaceFolder}/.env",
             "program": "/opt/playdate_sdk/bin/PlaydateSimulator",
             "args": [
-                "${workspaceFolder}/ParkingSim.pdx"
+                "${workspaceFolder}/*.pdx"
             ],
             "preLaunchTask": "Build",
             "stopAtEntry": false,
