@@ -2,6 +2,8 @@ FROM ubuntu:22.04
 
 # Install dependencies
 RUN apt update && apt install -y \
+    # vscode uses git inside the container (not the host)
+    git \
     # General build requirements for Playdate
     build-essential \
     wget \
