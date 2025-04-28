@@ -1,5 +1,6 @@
 /build
 /build-cmake
 *.pdx
-/Source/pd*
+/Source/pdex.elf
+/Source/pdex.so
 *.tiled-session
