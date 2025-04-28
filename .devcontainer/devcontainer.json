@@ -6,7 +6,7 @@
       "extensions": ["ms-vscode.cpptools-extension-pack"]
     }
   },
-  "postCreateCommand": "xmessage \"Welcome to the Playdate devcontainer!\n\nPress F5 to start the Playdate game\n(or go to the Run and Debug panel).\"",
+  "postCreateCommand": "xmessage \"Welcome to the Playdate devcontainer!\n\nPress F5 to start the Playdate game\n(or go to the Run and Debug panel).\" & (sleep 2s; python3 -m http.server)&",
   "portsAttributes": {
     "6080": {
       "label": "dev desktop",
