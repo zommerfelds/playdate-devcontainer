@@ -9,7 +9,7 @@
   "portsAttributes": {
     "6080": {
       "label": "dev desktop",
-      "onAutoForward": "notify"
+      "onAutoForward": "openPreview"
     }
   }
 }
