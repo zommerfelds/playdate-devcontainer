@@ -1,26 +1,15 @@
 {
-    "name": "Playdate Dev Container",
-    "build": {
-        "dockerfile": "Dockerfile"
-    },
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "ms-vscode.cpptools-extension-pack"
-            ]
-        }
-    },
-    "features": {
-        "desktop-lite": {
-            "password": "vscode",
-            "webPort": "6080",
-            "vncPort": "5901"
-        }
-    },
-    "portsAttributes": {
-        "6080": {
-            "label": "dev desktop",
-            "onAutoForward": "notify"
-        }
+  "name": "Playdate Dev Container",
+  "image": "zommerfelds/playdate-devcontainer:v1",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-vscode.cpptools-extension-pack"]
     }
+  },
+  "portsAttributes": {
+    "6080": {
+      "label": "dev desktop",
+      "onAutoForward": "notify"
+    }
+  }
 }

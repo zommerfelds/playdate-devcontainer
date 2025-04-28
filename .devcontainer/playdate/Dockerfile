@@ -21,9 +21,9 @@ RUN wget https://download.panic.com/playdate_sdk/Linux/PlaydateSDK-2.7.1.tar.gz 
 
 # Prevent the simulator from showing anoying popups in the first run
 RUN mkdir -p /root/.config/Playdate\ Simulator && echo '\
-ShowPerfWarning=0\n\
-LastRelease=2.7.1\n\
-ShowElist=0\n' > /root/.config/Playdate\ Simulator/Playdate\ Simulator.ini
+    ShowPerfWarning=0\n\
+    LastRelease=2.7.1\n\
+    ShowElist=0\n' > /root/.config/Playdate\ Simulator/Playdate\ Simulator.ini
 
 ENV PLAYDATE_SDK_PATH=/opt/playdate_sdk
 ENV PATH="${PLAYDATE_SDK_PATH}/bin:${PATH}"
